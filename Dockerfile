@@ -6,13 +6,8 @@ ENV ENVIRONMENT=test
 # Install rbenv system dependencies
 RUN yum install -y --enablerepo=PowerTools \
     gcc-c++ patch readline readline-devel zlib zlib-devel \
-    libyaml-devel libffi-devel openssl-devel make bzip2 \
+    libyaml-devel libffi-devel openssl-devel make bzip2 lynx \
     autoconf automake libtool bison glibc-headers git-core \
-    && yum clean all
-
-# Install application dependencies
-RUN yum install -y --enablerepo=PowerTools \
-    lynx \
     && yum clean all
 
 # Create the unprivileged user
