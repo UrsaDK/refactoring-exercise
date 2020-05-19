@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'date_range_formatter'
+require_relative "../../after_refactoring/date_range_formatter"
 
 describe DateRangeFormatter do
   let(:start_date) { '1996-12-25' }

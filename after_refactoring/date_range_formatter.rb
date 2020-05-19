@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'date'
-require 'inflector'
+require_relative 'inflector'
 
 class DateRangeFormatter
   using Inflector
